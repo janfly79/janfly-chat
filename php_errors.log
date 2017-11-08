@@ -1,0 +1,6 @@
+[07-Nov-2017 11:26:44 Asia/Shanghai] PHP Notice:  Undefined index: type in /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php on line 49
+[07-Nov-2017 11:28:34 Asia/Shanghai] PHP Notice:  Undefined index: to_client_id in /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php on line 97
+[07-Nov-2017 11:28:34 Asia/Shanghai] PHP Notice:  Undefined index: to_client_id in /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php on line 103
+[07-Nov-2017 11:28:34 Asia/Shanghai] PHP Notice:  Undefined index: to_client_id in /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php on line 107
+[07-Nov-2017 11:28:34 Asia/Shanghai] PHP Notice:  Undefined index: to_client_name in /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php on line 108
+[07-Nov-2017 11:45:15 UTC] PHP Warning:  Error while sending STMT_CLOSE packet. PID=31533 in Unknown on line 0
