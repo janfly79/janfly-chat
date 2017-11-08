@@ -1,0 +1,94 @@
+2017-11-07 10:17:22 pid:31002 Workerman[start.php] start in DEBUG mode
+2017-11-07 10:50:11 pid:31002 Workerman[start.php] stopping ...
+2017-11-07 10:50:11 pid:31002 Workerman[start.php] has been stopped
+2017-11-07 11:15:39 pid:31139 Workerman[start.php] start in DEBUG mode
+2017-11-07 14:15:41 pid:31139 Workerman[start.php] stopping ...
+2017-11-07 14:15:41 pid:31139 Workerman[start.php] has been stopped
+2017-11-07 14:15:43 pid:31295 Workerman[start.php] start in DEBUG mode
+2017-11-07 15:14:20 pid:31295 Workerman[start.php] stopping ...
+2017-11-07 15:14:20 pid:31295 Workerman[start.php] has been stopped
+2017-11-07 15:14:21 pid:31368 Workerman[start.php] start in DEBUG mode
+2017-11-07 15:14:56 pid:31370 ArgumentCountError: Too few arguments to function GatewayWorker\Lib\Db::instance(), 0 passed in /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php on line 133 and exactly 1 expected in /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/Lib/Db.php:38
+Stack trace:
+#0 /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php(133): GatewayWorker\Lib\Db::instance()
+#1 [internal function]: Events::onMessage('7f00000108fd000...', '{"type":"api","...')
+#2 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f00000108fd000...', '{"type":"api","...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #49)
+#6 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#7 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1882): Workerman\Events\Select->loop()
+#8 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#9 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1107): GatewayWorker\BusinessWorker->run()
+#10 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1070): Workerman\Worker::forkOneWorker(Object(GatewayWorker\BusinessWorker))
+#11 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(445): Workerman\Worker::forkWorkers()
+#12 /workspace/zp/test_dir/demo_life/workerman-chat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2017-11-07 15:14:56 pid:31370 Worker[31370] process terminated
+2017-11-07 15:14:56 pid:31368 worker[ChatBusinessWorker:31370] exit with status 64000
+2017-11-07 15:15:39 pid:31381 ArgumentCountError: Too few arguments to function GatewayWorker\Lib\Db::instance(), 0 passed in /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php on line 133 and exactly 1 expected in /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/Lib/Db.php:38
+Stack trace:
+#0 /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php(133): GatewayWorker\Lib\Db::instance()
+#1 [internal function]: Events::onMessage('7f00000108fd000...', '{"type":"api","...')
+#2 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f00000108fd000...', '{"type":"api","...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#6 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#7 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1882): Workerman\Events\Select->loop()
+#8 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#9 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1107): GatewayWorker\BusinessWorker->run()
+#10 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1070): Workerman\Worker::forkOneWorker(Object(GatewayWorker\BusinessWorker))
+#11 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1225): Workerman\Worker::forkWorkers()
+#12 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(447): Workerman\Worker::monitorWorkers()
+#13 /workspace/zp/test_dir/demo_life/workerman-chat/start.php(37): Workerman\Worker::runAll()
+#14 {main}
+2017-11-07 15:15:39 pid:31381 Worker[31381] process terminated
+2017-11-07 15:15:39 pid:31368 worker[ChatBusinessWorker:31381] exit with status 64000
+2017-11-07 15:17:43 pid:31368 Workerman[start.php] stopping ...
+2017-11-07 15:17:43 pid:31368 Workerman[start.php] has been stopped
+2017-11-07 15:17:44 pid:31393 Workerman[start.php] start in DEBUG mode
+2017-11-07 15:17:52 pid:31394 Error: Class 'Config\Db' not found in /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/Lib/Db.php:40
+Stack trace:
+#0 /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php(133): GatewayWorker\Lib\Db::instance('db')
+#1 [internal function]: Events::onMessage('7f00000108fe000...', '{"type":"api","...')
+#2 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f00000108fe000...', '{"type":"api","...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#6 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#7 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1882): Workerman\Events\Select->loop()
+#8 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#9 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1107): GatewayWorker\BusinessWorker->run()
+#10 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1070): Workerman\Worker::forkOneWorker(Object(GatewayWorker\BusinessWorker))
+#11 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(445): Workerman\Worker::forkWorkers()
+#12 /workspace/zp/test_dir/demo_life/workerman-chat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2017-11-07 15:17:52 pid:31394 Worker[31394] process terminated
+2017-11-07 15:17:52 pid:31393 worker[ChatBusinessWorker:31394] exit with status 64000
+2017-11-07 15:18:09 pid:31393 Workerman[start.php] stopping ...
+2017-11-07 15:18:09 pid:31393 Workerman[start.php] has been stopped
+2017-11-07 15:21:15 pid:31508 Workerman[start.php] start in DEBUG mode
+2017-11-07 15:21:23 pid:31510 Error: Class 'Config\Db' not found in /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/Lib/Db.php:40
+Stack trace:
+#0 /workspace/zp/test_dir/demo_life/workerman-chat/Applications/Chat/Events.php(133): GatewayWorker\Lib\Db::instance('db')
+#1 [internal function]: Events::onMessage('7f00000108fd000...', '{"type":"api","...')
+#2 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f00000108fd000...', '{"type":"api","...')
+#3 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #50)
+#6 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#7 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1882): Workerman\Events\Select->loop()
+#8 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#9 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1107): GatewayWorker\BusinessWorker->run()
+#10 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(1070): Workerman\Worker::forkOneWorker(Object(GatewayWorker\BusinessWorker))
+#11 /workspace/zp/test_dir/demo_life/workerman-chat/vendor/workerman/workerman/Worker.php(445): Workerman\Worker::forkWorkers()
+#12 /workspace/zp/test_dir/demo_life/workerman-chat/start.php(37): Workerman\Worker::runAll()
+#13 {main}
+2017-11-07 15:21:23 pid:31510 Worker[31510] process terminated
+2017-11-07 15:21:23 pid:31508 worker[ChatBusinessWorker:31510] exit with status 64000
+2017-11-07 15:21:38 pid:31508 Workerman[start.php] stopping ...
+2017-11-07 15:21:38 pid:31508 Workerman[start.php] has been stopped
+2017-11-07 15:22:12 pid:31531 Workerman[start.php] start in DEBUG mode
+2017-11-07 19:45:15 pid:31531 Workerman[start.php] stopping ...
+2017-11-07 19:45:15 pid:31531 Workerman[start.php] has been stopped

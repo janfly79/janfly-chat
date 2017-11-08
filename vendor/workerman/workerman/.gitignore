@@ -1,5 +1,6 @@
-.idea
+logs
 .buildpath
 .project
 .settings
-#vendor
+.idea
+.DS_Store
