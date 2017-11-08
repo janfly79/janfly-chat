@@ -1,3 +1,8 @@
+
+2017/11/06  14:38
+
+janfly edit  
+
 workerman-chat
 =======
 基于workerman的GatewayWorker框架开发的一款高性能支持分布式部署的聊天室系统。
